@@ -20,8 +20,24 @@ var ul = document.querySelector("ul");
 console.log(ul);
 
 var li = ul.children[1];
-// console.log(li);
+console.log(li);
 
+/**
+ * Alternative method. 
+ */
 var aboutLi = Array.from(ul.children);
 var lee = aboutLi[1];
 console.log(lee);
+
+for(var i = 0; i < aboutLi.length;  i++) 
+{
+    if(aboutLi[i].textContent === "About")
+    {
+        console.warn("This is correct!");
+        console.log(aboutLi[i]);
+    }
+    else
+    {
+
+    }
+}
